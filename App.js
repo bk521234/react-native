@@ -7,6 +7,7 @@
  */
 
 import React, {Fragment} from 'react';
+import HelloWorldApp from './HelloWorld.js';
 import {
   SafeAreaView,
   StyleSheet,
@@ -46,6 +47,8 @@ const App = () => {
                 screen and then come back to see your edits.
               </Text>
             </View>
+            <HelloWorldApp></HelloWorldApp>
+
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
               <Text style={styles.sectionDescription}>
