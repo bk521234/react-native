@@ -7,7 +7,7 @@
  */
 
 import React, {Fragment} from 'react';
-import HelloWorldApp from './HelloWorld.js';
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,6 +24,19 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import HelloWorldApp from './HelloWorld';
+import Bananas from './BananaImage';
+import LotsOfGreetings from './LotsOfGreetings';
+import BlinkApp from './BlinkingMessage';
+import LotsOfStyles from './ColorfulText';
+import FixedDimensionsBasics from './FixedDimensions';
+import FlexDimensionsBasics from './FlexDimensions';
+import PizzaTranslator from './PizzaTranslator';
+import ButtonBasics from './ButtonsExample';
+import Touchables from './ButtonPressFeedback';
+import IScrolledDownAndWhatHappenedNextShockedMe from './ScrollViewExample';
+import SectionListBasics from './SectionListExample';
+import FetchExample from './FetchExample';
 
 const App = () => {
   return (
@@ -48,6 +61,21 @@ const App = () => {
               </Text>
             </View>
             <HelloWorldApp></HelloWorldApp>
+            <Bananas></Bananas>
+            <PizzaTranslator></PizzaTranslator>
+            <ButtonBasics></ButtonBasics>
+            <Touchables/>
+            <IScrolledDownAndWhatHappenedNextShockedMe/>
+            <SectionListBasics></SectionListBasics>
+
+
+            <LotsOfGreetings></LotsOfGreetings>
+            <BlinkApp></BlinkApp>
+            <FlexDimensionsBasics></FlexDimensionsBasics>
+
+            <LotsOfStyles></LotsOfStyles>
+            <FixedDimensionsBasics></FixedDimensionsBasics>
+            <FetchExample/>
 
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
